@@ -2,15 +2,18 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 html,
 body {
-  font-family: "Poppins";
+  font-family: "Poppins Regular";
   overflow-x: hidden;
   scroll-behavior: smooth;
   background-color: white;
 }
 .images {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
+}
+.colored-text {
+  color: #41b883;
 }
 
 /* NAVBAR */
@@ -98,9 +101,10 @@ h3.heading {
 .heading-underline {
   width: 3rem;
   height: 0.2rem;
-  background-color: #1ebba3;
+  background-color: #41b883;
   margin: 0 auto 2rem;
 }
+
 h1 {
   text-transform: uppercase;
   font-weight: 700;
@@ -109,6 +113,70 @@ h1 {
 .lead {
   font-weight: 600;
 }
+
+/* TIMELINE */
+.timeline {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  background-color: #41b883;
+  bottom: 0;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.tlcontainer {
+  padding: 10px 40px;
+  width: 50%;
+  position: relative;
+  background-color: inherit;
+}
+.left {
+  left: 0;
+}
+.right {
+  left: 50%;
+}
+.left::before {
+  content: "";
+  height: 0em;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #41b883;
+  border-width: 10px 0px 10px 10px;
+  border-color: transparent transparent transparent #41b883;
+}
+.right::before {
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #41b883;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #41b883 transparent transparent;
+}
+.right::after {
+  left: -16px;
+}
+.content {
+  padding: 20px 30px;
+  border-radius: 5px;
+  background-color: #41b883;
+  position: relative;
+  color: white;
+}
+
 /* PORTFOLIO */
 .portfolio img {
   max-width: 100%;
@@ -122,6 +190,10 @@ h1 {
 }
 .portfolio {
   overflow: hidden;
+}
+.bold-text {
+  font-weight: 300;
+  font-size: 17px;
 }
 
 /* NEWSLETTER */
