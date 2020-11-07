@@ -79,12 +79,14 @@ body {
   padding-top: 2rem;
 }
 .btn-md {
-  border-radius: 80px;
-  text-transform: uppercase;
-  color: white;
-  font-weight: 600;
-  border: none;
-  background-color: #41b883;
+  text-decoration: none;
+  background: #41b883;
+  color: #fff;
+  padding: 12px 24px;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 14px;
+  border-color: #41b883;
 }
 .btn-md:hover {
   transition: all ease-in-out smooth;
@@ -306,6 +308,7 @@ h1 {
   letter-spacing: 20px;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  font-family: Montserrat;
 }
 
 .container a {
@@ -316,4 +319,9 @@ h1 {
   display: inline-block;
   border-radius: 25px;
   font-size: 14px;
+}
+
+.container a:hover {
+  background: transparent;
+  border-color: #000;
 }
