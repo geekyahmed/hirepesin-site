@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 html,
 body {
-  font-family: "Poppins Regular";
+  font-family: "Poppins";
   overflow-x: hidden;
   scroll-behavior: smooth;
   background-color: white;
