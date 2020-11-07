@@ -342,7 +342,7 @@ h1 {
   word-spacing: 2px;
 }
 label {
-  margin: 20px 0;
+  margin: 10px 0;
   font-size: 18px;
   font-weight: 300;
 }
@@ -357,8 +357,7 @@ label {
   color: rgb(7, 80, 55);
 }
 input[type="text"],
-input[type="password"],
-input[type="submit"] {
+input[type="password"] {
   width: 100%;
   border: none;
   outline: none;
