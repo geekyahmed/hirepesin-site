@@ -294,5 +294,26 @@ h1 {
 }
 .footer-text:hover {
   text-decoration: none;
+  color: #41b883;
   text-decoration-line: none;
+}
+
+/* 404 PAGE */
+.container .num {
+  font-size: 160px;
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 20px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.container a {
+  text-decoration: none;
+  background: #41b883;
+  color: #fff;
+  padding: 12px 24px;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 14px;
 }
