@@ -79,6 +79,24 @@ body {
   content: "";
   background-size: 100% 100%;
 }
+.dropdown-menu {
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+}
+.dropdown-menu .dropdown-item {
+  padding: 10px 30px;
+  display: block;
+  color: #1e1e27;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
 /* CAROUSEL */
 .carousel-item {
   width: 100%;
