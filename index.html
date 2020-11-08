@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale =1" />
-    <title>Hirepesin - Your Job Search Ends Here</title>
+    <title>Hirepesin - Jobs At Your Fingertips</title>
 
     <!-- CSS SCRIPTS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive" class="">
@@ -273,6 +274,81 @@
         </div>
     </div>
 
+    <div class="container-fluid padding mt-5" data-aos="fade-up">
+        <h1 class="heading text-center ">Testimonials</h1>
+        <div class="heading-underline"></div>
+        <section id="testimonials">
+            <div class="container">
+                <div class="owl-carousel testimonials-carousel">
+                    <div class="testimonial-item" data-aos="fade-up">
+                        <p>
+                            <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                            Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                            <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+                        </p>
+                        <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
+                        <h3>Saul Goodman</h3>
+                        <h4>Ceo &amp; Founder</h4>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <p>
+                            <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                            Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum
+                            eram malis
+                            quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                            <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+                        </p>
+                        <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
+                        <h3>Sara Wilsson</h3>
+                        <h4>Designer</h4>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <p>
+                            <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                            Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
+                            minim
+                            tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                            <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+                        </p>
+                        <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
+                        <h3>Jena Karlis</h3>
+                        <h4>Store Owner</h4>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <p>
+                            <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                            Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim
+                            velit
+                            minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum
+                            veniam.
+                            <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+                        </p>
+                        <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
+                        <h3>Matt Brandon</h3>
+                        <h4>Freelancer</h4>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <p>
+                            <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                            Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam
+                            enim
+                            culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi
+                            cillum
+                            quid.
+                        </p>
+                        <h3>John Larson</h3>
+                        <h4>Entrepreneur</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
     <!-- About  -->
     <div id="about" class="container-fluid padding mt-5 " data-aos="fade-up">
         <h1 class="heading text-center ">Our Team</h1>
@@ -336,7 +412,7 @@
                 </div>
                 <div class="col-12">
                     <h5>&copy; Hirepesin
-                        <script>document.write(new Date().getFullYear());</script> | Created By The Hirepesin Team</h5>
+                        <script>document.write(new Date().getFullYear());</script> | Jobs At Your Fingertips</h5>
                 </div>
             </div>
         </div>
@@ -349,6 +425,7 @@
     <script src="js/typed.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/aos.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
 
@@ -362,6 +439,23 @@
             typeSpeed: 120,
             backSpeed: 90,
             loop: true
+        });
+        // Testimonials carousel (uses the Owl Carousel library)
+        $(".testimonials-carousel").owlCarousel({
+            autoplay: true,
+            dots: true,
+            loop: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                900: {
+                    items: 3
+                }
+            }
         });
         jQuery(document).ready(function ($) {
             // Back to top button
