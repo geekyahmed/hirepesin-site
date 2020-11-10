@@ -58,17 +58,25 @@
             </nav>
         </div>
 
-        <!-- Carousel -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active" style="background-image: url('images/image_2.jpg');"></div>
-                <div class="carousel-caption text-center animated slideInRight">
-                    <h1>The Right Place For <span class="typed"></span></h1>
-                    </h3>
-                    <a class=" btn btn-secondary btn-lg btn-md" href="#">Get Started <i class="fa fa-user"></i></a>
+        <section class="home_banner_area">
+            <div class="banner_inner d-flex align-items-center">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6 col-xl-5 offset-xl-7">
+                            <div class="banner_content">
+                                <h3>The Right Place For<br /><span class="typed"></span></h3>
+                                <p>We strive to make job opportunities available for all including the youths and
+                                    artisans. With our platform, searching for job has never been easier and faster.
+                                </p>
+                                <a class="banner_btn" href="#">Get Started<i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- About  -->
         <div id="about" class="container-fluid padding" data-aos="fade-up">
@@ -378,75 +386,76 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <footer id="footer">
-            <div class="container">
-                <div class="copyright">
-                    &copy; Copyright <strong>Hirepesin</strong>. All Rights Reserved
-                </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong>Hirepesin</strong>. All Rights Reserved
             </div>
-        </footer><!-- #footer -->
+        </div>
+    </footer><!-- #footer -->
 
-        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-        <!-- JAVASCRIPT SRC -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/typed.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/aos.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
+    <!-- JAVASCRIPT SRC -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
 
-        <script>
-            AOS.init({
-                duration: 800,
-                easing: 'slide'
-            });
-            var typed = new Typed('.typed', {
-                strings: ['Painters..', 'Farmers..', 'Traders..', 'Bakers..', 'Chefs..'],
-                typeSpeed: 120,
-                backSpeed: 90,
-                loop: true
-            });
-            // Testimonials carousel (uses the Owl Carousel library)
-            $(".testimonials-carousel").owlCarousel({
-                autoplay: true,
-                dots: true,
-                loop: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    768: {
-                        items: 2
-                    },
-                    900: {
-                        items: 3
-                    }
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'slide'
+        });
+        var typed = new Typed('.typed', {
+            strings: ['Painters..', 'Farmers..', 'Traders..', 'Bakers..', 'Chefs..'],
+            typeSpeed: 120,
+            backSpeed: 90,
+            loop: true
+        });
+        // Testimonials carousel (uses the Owl Carousel library)
+        $(".testimonials-carousel").owlCarousel({
+            autoplay: true,
+            dots: true,
+            loop: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                900: {
+                    items: 3
+                }
+            }
+        });
+        jQuery(document).ready(function ($) {
+            // Back to top button
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.back-to-top').fadeIn('slow');
+                } else {
+                    $('.back-to-top').fadeOut('slow');
                 }
             });
-            jQuery(document).ready(function ($) {
-                // Back to top button
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > 100) {
-                        $('.back-to-top').fadeIn('slow');
-                    } else {
-                        $('.back-to-top').fadeOut('slow');
-                    }
-                });
-                $('.back-to-top').click(function () {
-                    $('html, body').animate({
-                        scrollTop: 0
-                    }, 1500, 'easeInOutExpo');
-                    return false;
-                });
+            $('.back-to-top').click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 1500, 'easeInOutExpo');
+                return false;
             });
-            $('.counter').counterUp({
-                delay: 1,
-                time: 1000
-            });
-        </script>
+        });
+        $('.counter').counterUp({
+            delay: 1,
+            time: 1000
+        });
+    </script>
 </body>
 
 </html>
