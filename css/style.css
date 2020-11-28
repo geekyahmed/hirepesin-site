@@ -15,7 +15,7 @@ body {
 }
 p {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 .padding {
@@ -446,7 +446,7 @@ h1 {
 }
 .why-choose-us-content h4 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 15px;
   -webkit-transition-duration: 800ms;
   -o-transition-duration: 800ms;
