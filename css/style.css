@@ -205,7 +205,7 @@ p {
   padding: 3rem 0 2rem;
 }
 h3.heading {
-  font-family: "DM Sans Regular";
+  font-family: "DM Sans";
   font-size: 1.9rem;
   font-weight: 700;
   text-transform: capitalize;
@@ -218,7 +218,7 @@ h3.heading {
   margin: 0 auto 2rem;
 }
 h1 {
-  font-family: "DM Sans Regular";
+  font-family: "DM Sans";
   text-transform: capitalize;
   font-weight: 700;
   font-size: 30px;
@@ -446,7 +446,7 @@ h1 {
 }
 .why-choose-us-content h4 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 15px;
   -webkit-transition-duration: 800ms;
   -o-transition-duration: 800ms;
