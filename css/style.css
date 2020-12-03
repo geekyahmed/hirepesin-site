@@ -14,9 +14,11 @@ body {
   object-fit: cover;
 }
 p {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #7f7f7f;
+  margin-bottom: 40px;
+  line-height: 27px;
 }
 .padding {
   margin-top: 20px;
@@ -25,7 +27,20 @@ p {
 .colored-text {
   color: #41b883;
 }
-
+h4 {
+  font-size: 29px;
+  font-weight: bold;
+  color: #1d1d1d;
+  font-family: "DM Sans", sans-serif;
+  line-height: 58px;
+}
+.area-underline {
+  width: 6rem;
+  position: absolute;
+  height: 0.2rem;
+  padding-left: 210px;
+  background-color: darkgreen;
+}
 /* NAVBAR */
 .nav-container {
   width: 100%;
@@ -179,6 +194,13 @@ p {
   -moz-box-shadow: -11px 20px 35px -1px rgba(0, 0, 0, 0.36);
   box-shadow: -11px 20px 35px -1px rgba(0, 0, 0, 0.36);
 }
+
+/*HOW IT WORKS*/
+.area-section p {
+  line-height: 27px;
+  padding-right: 65px;
+}
+
 /* COURSE */
 .narrow {
   width: 75%;
@@ -212,9 +234,10 @@ h3.heading {
   padding-bottom: 1.2rem;
 }
 .heading-underline {
-  width: 3rem;
+  width: 6rem;
   height: 0.2rem;
-  background-color: #41b883;
+  padding-left: 210px;
+  background-color: sandybrown;
   margin: 0 auto 2rem;
 }
 h1 {
