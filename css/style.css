@@ -34,13 +34,6 @@ h4 {
   font-family: "DM Sans", sans-serif;
   line-height: 58px;
 }
-.area-underline {
-  width: 6rem;
-  position: absolute;
-  height: 0.2rem;
-  padding-left: 210px;
-  background-color: darkgreen;
-}
 /* NAVBAR */
 .nav-container {
   width: 100%;
@@ -691,6 +684,14 @@ h1 {
 #footer .copyright {
   text-align: center;
   padding-top: 30px;
+}
+
+#footer .footer-links p {
+  line-height: 2px;
+}
+#footer .footer-links a {
+  color: #7f7f7f;
+  text-decoration: none;
 }
 
 /*  JOB PAGE */
