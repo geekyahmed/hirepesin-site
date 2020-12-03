@@ -141,7 +141,7 @@ h4 {
   color: #fff;
 }
 .home_banner_area .banner_inner .banner_content h3 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   margin-bottom: 30px;
@@ -151,6 +151,7 @@ h4 {
   font-weight: 500;
   line-height: 27px;
   margin-bottom: 50px;
+  color: white;
 }
 .banner_btn {
   display: inline-block;
